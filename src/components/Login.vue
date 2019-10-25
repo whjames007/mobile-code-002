@@ -1,17 +1,19 @@
 <template>
   <div id="login">
+
+    <img src="../assets/logo.png">
     <van-button type="default">默认按钮</van-button>
     <van-button type="primary" @click="ccc">主要按钮</van-button>
     <van-button type="info">信息按钮</van-button>
     <van-button type="warning">警告按钮</van-button>
     <van-button type="danger">危险按钮</van-button>
-    <router-view />
-    <van-tabbar v-model="active">
+    <!-- <router-view /> -->
+    <!-- <van-tabbar v-model="active">
       <van-tabbar-item icon="home-o">标签</van-tabbar-item>
       <van-tabbar-item icon="search">标签</van-tabbar-item>
       <van-tabbar-item icon="friends-o">标签</van-tabbar-item>
       <van-tabbar-item icon="setting-o">标签</van-tabbar-item>
-    </van-tabbar>
+    </van-tabbar> -->
   </div>
 </template>
 
@@ -41,7 +43,10 @@ export default {
 </script>
 
 <style scoped>
-  h3 {
-    margin: 40px 0 0;
+  #login {
+    height: 100vh;
+    width: 100vw;
+    background: #1989FA;
+    text-align: center;
   }
 </style>
