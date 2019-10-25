@@ -16,6 +16,7 @@
   "dependencies": {
     "ajv": "^6.10.2",
     "ajv-keywords": "^3.4.1",
+    "open-browser-webpack-plugin": "0.0.5",
     "vant": "^2.2.9",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1"
