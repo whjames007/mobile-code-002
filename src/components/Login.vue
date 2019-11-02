@@ -1,9 +1,7 @@
 <template>
   <div id='login'>
-    <div>
-      <img src='../assets/logo.png' />
-    </div>
-
+    <div class="login-title-style">美雅小账本</div>
+    <div class="login-image-style"><img src='../assets/logo.png' /></div>
     <div>
       <van-cell-group>
         <van-field
@@ -67,10 +65,16 @@ export default {
 </script>
 
 <style scoped>
+.login-title-style {
+  margin: 30px 0px 0px 0px;
+}
+.login-image-style {
+  margin: 30px 0px 0px 0px;
+}
+/*background: #1989FA;*/
 #login {
   height: 100vh;
   width: 100vw;
-  background: #1989FA;
   text-align: center;
 }
 </style>
