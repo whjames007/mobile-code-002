@@ -2,34 +2,15 @@
   <div id='login'>
     <div class="login-title-style">美雅小账本</div>
     <div class="login-image-style"><img src='../assets/logo.png' /></div>
-    <div>
+    <div class="login-title-style">记录家庭小生活中收支的点点滴滴...</div>
+    <div class="login-image-style">
       <van-cell-group>
-        <van-field
-          v-model='username'
-          required
-          clearable
-          label='用户名'
-          right-icon='question-o'
-          placeholder='请输入用户名'
-        />
-        <van-field v-model='password' type='password' label='密码' placeholder='请输入密码' required />
+        <van-field v-model='condition.username' required clearable label='用户名' placeholder='请输入用户名'/>
+        <van-field v-model='condition.password' required type='password' label='密码' placeholder='请输入密码'/>
       </van-cell-group>
     </div>
-    <div>
-      <van-button type='primary' @click='ccc'>主要按钮</van-button>
-    </div>
-    <div>
-      <van-button type='info'>信息按钮</van-button>
-    </div>
-
-    <div>
-      <div>
-        <img src alt />
-      </div>
-    </div>
-
-    <van-button type='warning'>警告按钮</van-button>
-    <van-button type='danger'>危险按钮</van-button>
+    <div class="login-image-style"><van-button type='info' @click='methodLogin'>登录系统</van-button></div>
+    <div class="login-image-style"><van-button type='info' @click='methodRegister'>新用户注册</van-button></div>
     <!-- <router-view /> -->
     <!-- <van-tabbar v-model='active'>
       <van-tabbar-item icon='home-o'>标签</van-tabbar-item>
@@ -45,8 +26,10 @@ const log = '【登录页面】'
 export default {
   data () {
     return {
-      active: 0,
-      aaa: 'sdf水电费'
+      condition: {
+        username: null,
+        password: null
+      }
     }
   },
   mounted () {
@@ -54,11 +37,16 @@ export default {
     console.info(log, name)
   },
   methods: {
-    ccc () {
-      console.info(this.aaa)
+    methodLogin () {
+      let name = `【登录方法】`
+      console.info(log, name)
       this.$router.push({
         name: 'HelloWorld'
       })
+    },
+    methodRegister () {
+      let name = `【注册方法】`
+      console.info(log, name)
     }
   }
 }
@@ -66,7 +54,9 @@ export default {
 
 <style scoped>
 .login-title-style {
-  margin: 30px 0px 0px 0px;
+  margin: 60px 0px 0px 0px;
+  font-size: 24px;
+  color: #1989FA;
 }
 .login-image-style {
   margin: 30px 0px 0px 0px;
