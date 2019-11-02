@@ -46,7 +46,7 @@ const devWebpackConfig = merge(baseWebpackConfig, {
     }
   },
   plugins: [
-    new OpenBrowserPlugin({ url: 'http://localhost:8080' }),
+    new OpenBrowserPlugin({ url: 'http://192.168.0.190:8080' }),
     new webpack.DefinePlugin({
       'process.env': require('../config/dev.env')
     }),

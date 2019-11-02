@@ -15,9 +15,7 @@ export default {
     background: #07C160;*/
   #app {
     height: 100vh;
-    font-family: 'Avenir', Helvetica, Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
+    width: 100vw;
     text-align: center;
   }
 </style>

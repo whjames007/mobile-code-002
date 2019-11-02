@@ -11,13 +11,6 @@
     </div>
     <div class="login-image-style"><van-button type='info' @click='methodLogin'>登录系统</van-button></div>
     <div class="login-image-style"><van-button type='info' @click='methodRegister'>新用户注册</van-button></div>
-    <!-- <router-view /> -->
-    <!-- <van-tabbar v-model='active'>
-      <van-tabbar-item icon='home-o'>标签</van-tabbar-item>
-      <van-tabbar-item icon='search'>标签</van-tabbar-item>
-      <van-tabbar-item icon='friends-o'>标签</van-tabbar-item>
-      <van-tabbar-item icon='setting-o'>标签</van-tabbar-item>
-    </van-tabbar>-->
   </div>
 </template>
 
@@ -41,7 +34,7 @@ export default {
       let name = `【登录方法】`
       console.info(log, name)
       this.$router.push({
-        name: 'HelloWorld'
+        name: 'Show'
       })
     },
     methodRegister () {
@@ -54,12 +47,12 @@ export default {
 
 <style scoped>
 .login-title-style {
-  margin: 60px 0px 0px 0px;
-  font-size: 24px;
+  margin: 30px 0px 0px 0px;
+  font-size: 20px;
   color: #1989FA;
 }
 .login-image-style {
-  margin: 30px 0px 0px 0px;
+  margin: 20px 0px 0px 0px;
 }
 /*background: #1989FA;*/
 #login {
