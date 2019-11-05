@@ -1,15 +1,15 @@
 <template>
-  <div id='home'>
-    <van-button type='info'>信息home按钮</van-button>
+  <div id='ShowFind'>
+    <van-button type='info'>发现页面正在建设中，敬请期待。。。</van-button>
   </div>
 </template>
 
 <script>
-const log = '【home页面】'
+const log = '【ShowFind发现子页面】'
 export default {
   data () {
     return {
-      home: 'sdf水电费'
+      aaa: 'sdf水电费'
     }
   },
   mounted () {
@@ -18,7 +18,10 @@ export default {
   },
   methods: {
     ccc () {
-      console.info(this.home)
+      console.info(this.aaa)
+      this.$router.push({
+        name: 'HelloWorld'
+      })
     }
   }
 }

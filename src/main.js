@@ -8,6 +8,13 @@ import 'vant/lib/index.css'
 // 愿君多留神，此物最坑爹（必须最后引入）
 import router from './router'
 
+// 引入公共js
+import utilCommon from '../static/js/utilCommon.js'
+import utilDate from '../static/js/utilDate.js'
+
+Vue.prototype.utilCommon = utilCommon
+Vue.prototype.utilDate = utilDate
+
 Vue.config.productionTip = false
 Vue.use(Vant)
 

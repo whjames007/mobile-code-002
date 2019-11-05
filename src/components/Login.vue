@@ -10,7 +10,7 @@
       </van-cell-group>
     </div>
     <div class="login-image-style"><van-button type='info' @click='methodLogin'>登录系统</van-button></div>
-    <div class="login-image-style"><van-button type='info' @click='methodRegister'>新用户注册</van-button></div>
+    <!-- <div class="login-image-style"><van-button type='info' @click='methodRegister'>新用户注册</van-button></div> -->
   </div>
 </template>
 

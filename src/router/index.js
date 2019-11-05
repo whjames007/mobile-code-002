@@ -1,28 +1,23 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
 import Login from '@/components/Login'
-import Home from '@/components/second/Home'
 import Show from '@/components/Show'
-
+import ShowHome from '@/components/ShowHome'
+import ShowFind from '@/components/ShowFind'
+import HelloWorld from '@/components/HelloWorld'
 Vue.use(Router)
 
 export default new Router({
-  routes: [{
-    path: '/a',
-    name: 'HelloWorld',
-    component: HelloWorld
-  }, {
-    path: '/',
-    name: 'Login',
-    component: Login
-  }, {
-    path: '/home',
-    name: 'Home',
-    component: Home
-  }, {
-    path: '/show',
-    name: 'Show',
-    component: Show
-  }]
+  routes: [
+    {path: '/', name: 'Login', component: Login},
+    {path: '/HelloWorld', name: 'HelloWorld', component: HelloWorld},
+    {path: '/Show',
+      name: 'Show',
+      component: Show,
+      redirect: '/Show/ShowHome',
+      children: [
+        {path: 'ShowHome', name: 'ShowHome', component: ShowHome},
+        {path: 'ShowFind', name: 'ShowFind', component: ShowFind}]
+    }
+  ]
 })
