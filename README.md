@@ -1,7 +1,7 @@
 # mobile-code-002
 
 > A Vue.js project
-
+谷歌浏览器要安装一系列插件https://chrome.zzzmh.cn/index
 ## Build Setup
 
 ``` bash
