@@ -1,13 +1,16 @@
 <template>
   <div id='show'>
-  <div class="show-title-style">美雅小账本</div>
-  <keep-alive><router-view /></keep-alive>
-  <van-tabbar v-model='active'>
-    <van-tabbar-item icon='home-o' to="/Show/ShowHome">首页</van-tabbar-item>
-    <van-tabbar-item icon='search' to="/Show/ShowFind">发现</van-tabbar-item>
-    <van-tabbar-item icon='friends-o' to="/home">订单</van-tabbar-item>
-    <van-tabbar-item icon='setting-o' to="/home">我的</van-tabbar-item>
-  </van-tabbar>
+    <!-- 1、标题 -->
+    <div class="show-title-style">美雅小账本</div>
+    <!-- 2、路由 -->
+    <keep-alive><router-view /></keep-alive>
+    <!-- 2、底栏 -->
+    <van-tabbar v-model='active'>
+      <van-tabbar-item icon='home-o' to="/Show/ShowHome">首页</van-tabbar-item>
+      <van-tabbar-item icon='search' to="/Show/ShowFind">发现</van-tabbar-item>
+      <van-tabbar-item icon='friends-o' to="/home">订单</van-tabbar-item>
+      <van-tabbar-item icon='setting-o' to="/home">我的</van-tabbar-item>
+    </van-tabbar>
   </div>
 </template>
 

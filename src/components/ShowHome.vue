@@ -40,10 +40,4 @@ export default {
 </script>
 
 <style scoped>
-#login {
-  height: 100vh;
-  width: 100vw;
-  background: #1989FA;
-  text-align: center;
-}
 </style>
