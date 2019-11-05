@@ -11,7 +11,10 @@ npm install
 
 # serve with hot reload at localhost:8080
 npm run dev
-
+开发模式的IP地址--package.json:8
+"dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js --host 192.168.0.190",
+启动浏览器--webpack.dev.conf.js:49
+new OpenBrowserPlugin({ url: 'http://192.168.0.190:8080' }),
 # build for production with minification
 npm run build
 
